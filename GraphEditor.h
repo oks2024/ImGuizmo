@@ -143,9 +143,9 @@ struct Delegate
     virtual ~Delegate() = default;
 };
 
-void Show(Delegate& delegate, const Options& options, ViewState& viewState, bool enabled, FitOnScreen* fit = nullptr);
-void GraphEditorClear();
+IMGUI_API void Show(Delegate& delegate, const Options& options, ViewState& viewState, bool enabled, FitOnScreen* fit = nullptr);
+IMGUI_API void GraphEditorClear();
 
-bool EditOptions(Options& options);
+IMGUI_API bool EditOptions(Options& options);
 
 } // namespace
